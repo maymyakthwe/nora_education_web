@@ -1,0 +1,26 @@
+.home-background {
+    height: 55vh;
+    background-color: var(--color-primary);
+    position: relative;
+    text-align: center;
+    z-index: -1;
+}
+
+
+
+.nora-logo {
+    width: 25%;
+    position: absolute;
+    left: 28%;
+    top: 100%;
+    transform: translate(-50%, -99.5%);
+
+}
+
+.introduction-texts {
+    position: relative;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}

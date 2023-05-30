@@ -1,0 +1,85 @@
+.react-course {
+    margin-top: 2rem;
+}
+
+.react-course-header {
+    display: grid;
+    grid-template-columns: 60% 35%;
+    gap: 5%;
+}
+
+.react-course-header-img {
+    margin: auto;
+}
+
+.react-course-route a:visited {
+    color: #707070;
+}
+
+.react-course-route {
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    color: #707070;
+}
+
+.react-course-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.react-course-intro {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.react-course-owner {
+    padding-bottom: 1rem;
+    font-weight: 300;
+}
+
+.react-course-owner>span {
+    font-weight: 600;
+    color: black;
+}
+
+.react-updated {
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+    color: #707070;
+}
+
+/* ************ nav ************* */
+
+/* ************ nav ************* */
+.react-main-info {
+    line-height: 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.react-main-info h1 {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+
+}
+
+.react-main-info li {
+    list-style-position: inside;
+}
+
+.react-main-info li>span:nth-child(1) {
+    font-weight: 500;
+}
+
+.react-main-info>p {
+    font-size: 1.1rem;
+    padding: 0 0 1rem 0;
+}
+
+span.importance {
+    font-weight: 500;
+    color: #707070;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+}

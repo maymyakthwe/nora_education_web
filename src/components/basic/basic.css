@@ -1,0 +1,115 @@
+.basic-course {
+    margin-top: 2rem;
+}
+
+.basic-course-header {
+    display: grid;
+    grid-template-columns: 60% 35%;
+    gap: 5%;
+}
+
+.basic-course-header-img {
+    margin: auto;
+}
+
+.basic-course-route a:visited {
+    color: #707070;
+}
+
+.basic-course-route {
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    color: #707070;
+}
+
+.basic-course-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.basic-course-intro {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.basic-course-owner {
+    padding-bottom: 1rem;
+    font-weight: 300;
+}
+
+.basic-course-owner>span {
+    font-weight: 600;
+    color: black;
+}
+
+.basic-updated {
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+    color: #707070;
+}
+
+/* ************ nav ************* */
+
+.course-navbar {
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 0 3px 0px black;
+    margin: 1rem 0;
+}
+
+.course-nav-link {
+    width: 100%;
+    padding: 1rem 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.course-nav-link:hover {
+    background-color: rgba(112, 112, 112, 0.1);
+    box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.active {
+    font-weight: 600;
+    background-color: rgba(112, 112, 112, 0.1);
+    box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* ************ nav ************* */
+.basic-main-info {
+    line-height: 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.basic-main-info h1 {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+
+}
+
+.basic-main-info li {
+    list-style-position: inside;
+}
+
+.basic-main-info li>span:nth-child(1) {
+    font-weight: 500;
+}
+
+.basic-main-info>p {
+    font-size: 1.1rem;
+    padding: 0 0 1rem 0;
+}
+
+span.importance {
+    font-weight: 500;
+    color: #707070;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+}
+
+.basic-main-info>p>span,
+.react-main-info>p>span {
+    font-weight: 600;
+}
