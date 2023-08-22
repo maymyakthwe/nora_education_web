@@ -42,7 +42,7 @@ const Basic = () => {
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 initial={{ opacity: 0, scale: 0, y: 300 }}
                 transition={{ delay: 0.5, type: 'spring', duration: 1.3 }}
-                className='course-navbar container '>
+                className='course-navbar container scroll-menu'>
                 <div
                     onClick={() => setMainContent('about')}
                     className={mainContent === 'about' ?
