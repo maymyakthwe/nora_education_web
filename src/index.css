@@ -10,6 +10,10 @@
     text-decoration: none;
 }
 
+body {
+    width: 100%;
+}
+
 *::after,
 *::before {
     margin: 0;
@@ -35,9 +39,7 @@ html {
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
+
 
 .container {
     width: var(--container-width-lg);
@@ -51,4 +53,427 @@ img {
 
 .flex {
     display: flex;
+}
+
+@media only screen and (max-width:1500px) {
+    .nora-logo {
+        width: 30%;
+    }
+
+    .introduction-texts {
+        left: 38%;
+    }
+
+    /* course-section */
+
+    .courses {
+        width: 60%;
+    }
+
+    .courses-headline>div>div {
+        font-size: 1.2rem;
+    }
+
+    .courses-headline a {
+        font-size: 1rem;
+    }
+
+    .courses-headline>h1 {
+        font-size: 2.5rem;
+    }
+
+    .course-name {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width:1400px) {
+    .home-background {
+        height: 500px;
+    }
+
+    .nora-logo {
+        left: 26%;
+    }
+
+    .introduction-texts {
+        left: 35%;
+    }
+
+    /* course-section */
+
+    .courses {
+        width: 65%;
+    }
+
+
+}
+
+@media only screen and (max-width:1300px) {
+
+
+
+    .introduction-texts {
+        font-size: 2.5rem;
+        width: 65%;
+    }
+
+    .home-background {
+        height: 450px;
+    }
+
+    /* course-section */
+
+    .course-name {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    /* course-section */
+
+    .courses {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+
+    .nora-logo {
+        width: 32%;
+    }
+
+    .home-background {
+        height: 400px;
+    }
+
+    /* navbar */
+    .nav {
+        height: 65px;
+    }
+
+    .navbar {
+        font-size: 1.3rem;
+    }
+
+
+    .nav-link {
+        padding: 0.7rem;
+    }
+
+    /* course-section */
+
+    .courses {
+        width: 80%;
+    }
+
+    .courses-headline a {
+        font-size: 0.8rem;
+    }
+
+    .courses-headline>div>div {
+        font-size: 1rem;
+    }
+
+    .courses-headline>h1 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .introduction-texts {
+        font-size: 2rem;
+        width: 65%;
+        left: 35%;
+    }
+
+    .nora-logo {
+        left: 23%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+
+    .home-background {
+        height: 370px;
+    }
+
+    .nora-logo {
+        width: 35%;
+    }
+
+    /* navbar */
+    .nav {
+        height: 55px;
+    }
+
+    .navbar {
+        font-size: 1.2rem;
+    }
+
+
+    .nav-link {
+        padding: 0.5rem;
+        margin: 0 0.5rem;
+    }
+
+    /* course-section */
+
+    .courses {
+        width: 90%;
+    }
+
+    .course-name {
+        font-size: 1rem;
+    }
+
+    .course-description,
+    .course-level,
+    .course-price {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width:800px) {
+
+    .home-background {
+        height: 350px;
+    }
+
+    .introduction-texts {
+        font-size: 1.8rem;
+    }
+
+    .nora-logo {
+        width: 37%;
+    }
+
+    /* course-section */
+
+    .course {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+
+    .home-background {
+        height: 300px;
+    }
+
+    .introduction-texts {
+        font-size: 1.7rem;
+    }
+
+    .courses {
+        width: 95%;
+    }
+
+    .nora-logo {
+        left: 20%;
+    }
+
+    /* course-section */
+    .courses-section {
+        margin-top: 5rem;
+    }
+
+    .content>p {
+        font-size: 0.8rem;
+        padding: 1rem 2rem;
+
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    .home-background {
+        height: 250px;
+    }
+
+    .introduction-texts {
+        font-size: 1.3rem;
+    }
+
+    /* navbar */
+    .nav {
+        height: 45px;
+    }
+
+    .navbar {
+        font-size: 0.9rem;
+    }
+
+
+    .nav-link {
+        padding: 0.2rem;
+        margin: 0 0.2rem;
+    }
+
+    /* course-section */
+    .courses {
+        margin: 3rem 0;
+    }
+
+    .course {
+        width: 90%;
+    }
+
+    .courses-headline>div>div {
+        font-size: 0.8rem;
+    }
+
+    .courses-headline>h1 {
+        font-size: 1.3rem;
+        margin: 1rem 0;
+    }
+
+    .courses-section {
+        margin-top: 4rem;
+    }
+}
+
+
+
+@media only screen and (max-width:500px) {
+
+    .home-background {
+        height: 220px;
+    }
+
+    .nora-logo {
+        width: 35%;
+    }
+
+    /* course-section */
+
+    .courses {
+        grid-template-columns: 100%;
+        width: 80%;
+        margin: 3rem auto;
+    }
+
+    .course {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media only screen and (max-width:420px) {
+
+    .home-background {
+        height: 170px;
+    }
+
+    .nora-logo {
+        width: 32%;
+    }
+
+    .introduction-texts {
+        font-size: 1rem;
+    }
+
+    /* navbar */
+    .nav {
+        height: 35px;
+    }
+
+    .navbar {
+        font-size: 0.7rem;
+    }
+
+
+    .nav-link {
+        padding: 0.1rem;
+        margin: 0 0.1rem;
+    }
+
+    /* course-section */
+
+    .course-name {
+        font-size: 1rem;
+    }
+
+    .course-description,
+    .course-level,
+    .course-price {
+        font-size: 0.8rem;
+    }
+
+    .accordion>p {
+        padding: 0.2rem 0.5rem;
+    }
+
+    .content>p {
+        font-size: 0.7rem;
+        padding: 1rem 1.5rem;
+
+    }
+
+}
+
+@media only screen and (max-width:380px) {
+
+    .home-background {
+        height: 150px;
+    }
+
+    /* navbar */
+    .nav {
+        height: 28px;
+    }
+
+    .navbar {
+        font-size: 0.7rem;
+    }
+
+
+    .nav-link {
+        padding: 0.1rem;
+        margin: 0 0.1rem;
+    }
+
+    /* course-section */
+
+    .course {
+        width: 85%;
+    }
+
+    .content>p {
+        font-size: 0.7rem;
+        padding: 1rem 1.2rem;
+
+    }
+}
+
+@media only screen and (max-width:300px) {
+
+    .home-background {
+        height: 150px;
+    }
+
+    /* navbar */
+    .nav {
+        height: 25px;
+    }
+
+    .navbar {
+        font-size: 0.5rem;
+    }
+
+
+    .nav-link {
+        padding: 0.1rem;
+        margin: 0 0.1rem;
+    }
+
+    /* course-section */
+    .course {
+        width: 90%;
+    }
+
+    .courses-headline a {
+        font-size: 0.6rem;
+    }
 }

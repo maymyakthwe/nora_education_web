@@ -3,24 +3,41 @@ import './courses.css'
 import course1 from '../../images/1.png'
 import course2 from '../../images/2.png'
 import { BsFillArrowDownSquareFill } from 'react-icons/bs'
+import { motion } from 'framer-motion'
 
 
 const Courses = () => {
     return (
         <section id='courses-section' className='courses-section '>
             <div className='courses-headline'>
-                <div>
-                    <p><a href="#courses-section"> Check Out These New Courses On Promotion</a></p>
-                    < div><BsFillArrowDownSquareFill /></div >
-                </div>
-                <h1 >
+                <motion.div
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    initial={{ opacity: 0, scale: 0, y: 300 }}
+                    transition={{ delay: 0.5, type: 'spring', duration: 1.3 }}>
+                    <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ type: 'spring', stiffness: 400 }}>
+                        <a href="#courses-section"> Check Out These New Courses On Promotion</a>
+                        < div><BsFillArrowDownSquareFill /></div >
+                    </motion.div>
+                </motion.div>
+                <motion.h1
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    initial={{ opacity: 0, scale: 0, y: 300 }}
+                    transition={{ delay: 0.7, type: 'spring', duration: 1.3 }}>
                     Browse Available Courses
-                </h1>
+                </motion.h1>
             </div>
             {/* ********************************* */}
-            <div className='courses'>
-
-                <div className='course'>
+            <motion.div
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                initial={{ opacity: 0, scale: 0, y: 300 }}
+                transition={{ delay: 0.9, type: 'spring', duration: 1.3 }}
+                className='courses'>
+                <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: 'spring', stiffness: 250 }}
+                    className='course'>
                     <a href="/basic">
                         <div className='course-logo'>
                             <img src={course1} alt="" />
@@ -32,7 +49,7 @@ const Courses = () => {
                                     <input type="checkbox" id='input-1' />
                                     <p><label htmlFor="input-1"> What you'll learn </label></p>
                                     <div className='content'>
-                                        <p>HTML, CSS, JS</p>
+                                        <p>HTML, CSS, Java Script , Dom Manipulation With Java Script</p>
                                     </div>
                                 </div>
                             </div>
@@ -50,13 +67,13 @@ const Courses = () => {
                                     <input type="checkbox" id='input-3' />
                                     <p><label htmlFor="input-3"> Pricing </label></p>
                                     <div className='content'>
-                                        <p className='course-price'><span><b>Only 50,000 mmk </b></span><small>On Promotion <b>50% Off</b> </small></p>
+                                        <p className='course-price'><span><b>40,000 mmk </b></span><small> <b>On Promotion</b> </small></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
-                </div>
+                </motion.div>
 
                 {/* ********************************* */}
                 <div className='course'>
@@ -80,7 +97,7 @@ const Courses = () => {
                                     <input type="checkbox" id='input-12' />
                                     <p><label htmlFor="input-12"> Course Level </label></p>
                                     <div className='content'>
-                                        <p>Complete Beginner Course. Html,Css and Js knowledge Required</p>
+                                        <p>Html,Css and Js knowledge Required</p>
                                     </div>
                                 </div>
                             </div>
@@ -89,15 +106,16 @@ const Courses = () => {
                                     <input type="checkbox" id='input-13' />
                                     <p><label htmlFor="input-13"> Pricing </label></p>
                                     <div className='content'>
-                                        <p className='course-price'><span><b>Only 50,000 mmk </b></span><small>On Promotion <b>50% Off</b> </small></p>
+                                        <p className='course-price'><span><b>40,000 mmk </b></span><small> <b>On Promotion</b> </small></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                {/* ********************************* */}
-            </div>
+                {/* ************** courses state with an array ******************* */}
+                {/* ************** create coming soon state with an array ******************* */}
+            </motion.div>
         </section >
     )
 }

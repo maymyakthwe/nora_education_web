@@ -1,3 +1,7 @@
+body {
+    overflow-y: scroll;
+}
+
 .basic-course {
     margin-top: 2rem;
 }
@@ -112,4 +116,12 @@ span.importance {
 .basic-main-info>p>span,
 .react-main-info>p>span {
     font-weight: 600;
+}
+
+.basic-main-info div {
+    margin-bottom: 1rem;
+}
+
+.basic-main-info {
+    margin-bottom: 4rem;
 }

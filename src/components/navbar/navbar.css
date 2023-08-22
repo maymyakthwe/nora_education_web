@@ -16,14 +16,11 @@
 .nav {
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 7vh;
+    height: 70px;
     align-items: center;
 }
 
-.nav-title {
-    font-size: 2rem;
-    font-weight: 500;
-}
+
 
 .nav-link {
     padding: 1rem;

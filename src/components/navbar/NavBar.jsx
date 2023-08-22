@@ -6,7 +6,7 @@ const NavBar = () => {
         <div className='navbar'>
             <div className='nav'>
                 <div className='nav-title'>
-                    Code With Nora
+                    Nora's Academy
                 </div>
                 <div>
                     <a className='nav-link' href="/#home-section">Home</a>

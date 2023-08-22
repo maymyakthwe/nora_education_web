@@ -90,6 +90,7 @@ const ReactComponent = () => {
                             <h1>Platforms</h1>
                             <ul>
                                 <li>Google Classroom</li>
+                                <li>Telegram</li>
                                 <li>Discord</li>
                             </ul>
                         </div> : ''}

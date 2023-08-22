@@ -11,22 +11,19 @@
     text-align: center;
 }
 
-.courses-headline>div {
+.courses-headline>div>div {
     text-align: center;
     display: flex;
     justify-content: center;
 }
 
-.courses-headline>div>p {
+.courses-headline a {
+    font-size: 1.2rem;
     margin: 0 1rem;
     color: var(--color-primary);
 }
 
-.courses-headline>div>p>a:visited {
-    color: var(--color-primary);
-}
-
-.courses-headline>div>p>a {
+.courses-headline a:visited {
     color: var(--color-primary);
 }
 
@@ -52,6 +49,18 @@
     margin: 0 auto;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     height: max-content;
+}
+
+.course:nth-child(2) a {
+    filter: grayscale(100%);
+    pointer-events: none;
+}
+
+.course:nth-child(2):hover::after {
+    content: "coming soon";
+    position: relative;
+    bottom: 0;
+    left: 30%;
 }
 
 .course-name {
