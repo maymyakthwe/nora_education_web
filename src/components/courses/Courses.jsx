@@ -36,14 +36,17 @@ const Courses = () => {
                 className='courses'>
                 <motion.div
                     whileHover={{ scale: 1.1 }}
-                    transition={{ type: 'spring', stiffness: 250 }}
+                    transition={{ type: 'tween' }}
                     className='course'>
                     <a href="/basic">
                         <div className='course-logo'>
                             <img src={course1} alt="" />
                         </div>
                         <div className='course-info'>
-                            <div className='course-name'>HTML5 ,CSS3 ,Java Script basic to Advanced</div>
+                            <div className='course-name'>
+                                HTML5 ,CSS3 ,Java Script basic to Advanced
+                                <a className='details' href="/basic">More Details</a>
+                            </div>
                             <div className='course-description'>
                                 <div className='accordion'>
                                     <input type="checkbox" id='input-1' />
@@ -82,7 +85,9 @@ const Courses = () => {
                             <img src={course2} alt="" />
                         </div>
                         <div className='course-info'>
-                            <div className='course-name'>React Js : Complete React Developer Course</div>
+                            <div className='course-name'>
+                                React Js : Complete React Developer Course
+                                <a className='details' href="/basic">More Details</a></div>
                             <div className='course-description'>
                                 <div className='accordion'>
                                     <input type="checkbox" id='input-11' />

@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import vidOne from '../../videos/demon-slayer.mp4'
 import vidTwo from '../../videos/tic-tac-toe.mp4'
 import { IoMdArrowDropdown } from 'react-icons/io'
+import { IoMdArrowDropup } from 'react-icons/io'
 
 
 const Basic = () => {
@@ -35,7 +36,7 @@ const Basic = () => {
                                 HTML5 ,CSS3 ,Java Script Basic to Advanced
                             </div>
                             <div className='basic-course-intro'>
-                                Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games
+                                Learn Javascript like a Professional Start from the basics and go all the way to creating your own applications and games.
                             </div>
                             <div className='basic-course-owner'>
                                 This Course is offered by <span>Nora</span> . <a href="/home#courses">Website Development</a>
@@ -131,9 +132,14 @@ const Basic = () => {
                     <div>
                         {mainContent}
                     </div>
-                    <div>
-                        <IoMdArrowDropdown />
-                    </div>
+                    {isOpen === true ?
+                        <div>
+                            <IoMdArrowDropup />
+                        </div> :
+                        <div>
+                            <IoMdArrowDropdown />
+                        </div>
+                    }
                 </div>
                 {
                     isOpen === true ? <div className='course-nav-dropdown'>
@@ -278,3 +284,9 @@ const Basic = () => {
 }
 
 export default Basic
+
+
+
+
+// dropdown icon pake yin pyn change yan
+// dropdown link design pyin yan

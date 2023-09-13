@@ -126,3 +126,7 @@
     position: relative;
     z-index: 1;
 }
+
+.course-nav-dropdown div {
+    padding: 0.8rem 1rem;
+}

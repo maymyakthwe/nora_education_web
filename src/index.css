@@ -115,7 +115,7 @@ img {
 
     /* basic-course */
     .basic-course-header-info {
-        line-height: 1.6;
+        line-height: 1.7;
     }
 
     .basic-course-title {
@@ -408,6 +408,10 @@ img {
     /* project-preview */
     .video {
         width: 48%;
+    }
+
+    .basic-course-title {
+        line-height: 1.7;
     }
 
     /* course-nav */

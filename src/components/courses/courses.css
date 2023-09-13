@@ -160,3 +160,15 @@ input:checked~p {
 input:checked~.content {
     max-height: max-content;
 }
+
+.details {
+    display: block;
+    color: #9ba1a7;
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+    font-weight: 700;
+}
+
+a.details:visited {
+    color: #9ba1a7;
+}
