@@ -1,4 +1,5 @@
 .navbar {
+    position: relative;
     color: var(--color-dark);
     width: 100%;
     text-align: center;
@@ -6,7 +7,7 @@
     font-weight: 500;
     text-align: center;
     box-shadow: 0 0px 10px 0px black;
-    z-index: 1;
+    z-index: 2;
 }
 
 .nav-link:visited {

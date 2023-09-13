@@ -3,92 +3,190 @@ import course1 from '../../images/1.png'
 import './basic.css'
 import BasicContent from '../basicContent/BasicContent'
 import { motion } from 'framer-motion'
+import vidOne from '../../videos/demon-slayer.mp4'
+import vidTwo from '../../videos/tic-tac-toe.mp4'
+import { IoMdArrowDropdown } from 'react-icons/io'
 
 
 const Basic = () => {
-    const [mainContent, setMainContent] = useState('about')
+    const [mainContent, setMainContent] = useState('About');
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleIsOpen = (isOpenValue) => {
+        isOpenValue === true ?
+            setIsOpen(false) : setIsOpen(true)
+    }
 
     return (
         <section id='Basic-course-section' className='basic-course'>
             <motion.div
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 initial={{ opacity: 0, scale: 0, y: 300 }}
-                transition={{ delay: 0.2, type: 'spring', duration: 1.3 }}
+                transition={{ delay: 0.2, type: 'tween', duration: 0.7 }}
                 className='basic-course-header container'>
-                <div className='basic-course-header-info'>
-                    <div className='basic-course-route'>
-                        <a href="/home#courses">Website Development</a>
+                <div>
+                    <div className="basic-course-header-img">
+                        <img src={course1} alt="" />
                     </div>
-                    <div className='basic-course-title'>
-                        HTML5 ,CSS3 ,Java Script Basic to Advanced
+                    <div className='basic-course-header-info'>
+                        <div>
+
+                            <div className='basic-course-title'>
+                                HTML5 ,CSS3 ,Java Script Basic to Advanced
+                            </div>
+                            <div className='basic-course-intro'>
+                                Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games
+                            </div>
+                            <div className='basic-course-owner'>
+                                This Course is offered by <span>Nora</span> . <a href="/home#courses">Website Development</a>
+                            </div>
+                            <div className='basic-updated'>
+                                Last Update : <span>20/8/2023</span>
+                            </div>
+                        </div>
+                        <div className='basic-course-price'>
+                            Price: <b>40,000</b>  mmk
+                        </div>
                     </div>
-                    <div className='basic-course-intro'>
-                        Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games
-                    </div>
-                    <div className='basic-course-owner'>
-                        This Course is offered by <span>Nora</span> .
-                    </div>
-                    <div className='basic-updated'>
-                        Last Update : 20/8/2023
-                    </div>
-                </div>
-                <div className="basic-course-header-img">
-                    <img src={course1} alt="" />
                 </div>
             </motion.div>
+
+            <motion.div
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                initial={{ opacity: 0, scale: 0, y: 300 }}
+                transition={{ delay: 0.9, type: 'tween', duration: 0.7 }}
+                className='project-preview container'>
+                <h1>Included Video Preview</h1>
+                <p>The following are the projects included in the course.</p>
+                <div className='videos'>
+                    <div className='video'>
+                        <video width="100%" controls >
+                            <source src={vidOne} type="video/mp4" />
+                        </video>
+                        <p>Demon Slayer Project</p>
+                    </div>
+                    <div className='video'>
+                        <video width="100%" controls >
+                            <source src={vidTwo} type="video/mp4" />
+                        </video>
+                        <p>Tic Tac Toe Project</p>
+                    </div>
+                </div>
+            </motion.div>
+
 
             {/* /* ************ nav-start ************* */}
             <motion.div
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 initial={{ opacity: 0, scale: 0, y: 300 }}
-                transition={{ delay: 0.5, type: 'spring', duration: 1.3 }}
-                className='course-navbar container scroll-menu'>
-                <div
-                    onClick={() => setMainContent('about')}
-                    className={mainContent === 'about' ?
-                        'active course-nav-link' : 'course-nav-link'}>
-                    About
-                </div>
-                <div
-                    onClick={() => setMainContent('qualification')}
-                    className={mainContent === 'qualification' ?
-                        'active course-nav-link' : 'course-nav-link'}>
-                    Qualification
-                </div>
-                <div
-                    onClick={() => setMainContent('experience')}
-                    className={mainContent === 'experience' ?
-                        'active course-nav-link' : 'course-nav-link'}>
-                    Student Experience
-                </div>
-                <div
-                    onClick={() => setMainContent('content')}
-                    className={mainContent === 'content' ?
-                        'active course-nav-link' : 'course-nav-link'}>
-                    Course Content
-                </div>
-                <div
-                    onClick={() => setMainContent('platform')}
-                    className={mainContent === 'platform' ?
-                        'active course-nav-link' : 'course-nav-link'}>
-                    Platform
-                </div>
-                <div
-                    onClick={() => setMainContent('certificate')}
-                    className={mainContent === 'certificate' ?
-                        'active course-nav-link' : 'course-nav-link'}>
-                    Certificate
+                transition={{ delay: 1.2, type: 'tween', duration: 0.7 }}
+                className='course-navbar container'>
+                <div className='course-nav'>
+                    <div
+                        onClick={() => setMainContent('About')}
+                        className={mainContent === 'About' ?
+                            'active course-nav-link' : 'course-nav-link'}>
+                        About
+                    </div>
+                    <div
+                        onClick={() => setMainContent('Qualification')}
+                        className={mainContent === 'Qualification' ?
+                            'active course-nav-link' : 'course-nav-link'}>
+                        Qualification
+                    </div>
+                    <div
+                        onClick={() => setMainContent('Experience')}
+                        className={mainContent === 'Experience' ?
+                            'active course-nav-link' : 'course-nav-link'}>
+                        Student Experience
+                    </div>
+                    <div
+                        onClick={() => setMainContent('Course Content')}
+                        className={mainContent === 'Course Content' ?
+                            'active course-nav-link' : 'course-nav-link'}>
+                        Course Content
+                    </div>
+                    <div
+                        onClick={() => setMainContent('Platform')}
+                        className={mainContent === 'Platform' ?
+                            'active course-nav-link' : 'course-nav-link'}>
+                        Platform
+                    </div>
+                    <div
+                        onClick={() => setMainContent('Certificate')}
+                        className={mainContent === 'Certificate' ?
+                            'active course-nav-link' : 'course-nav-link'}>
+                        Certificate
+                    </div>
                 </div>
             </motion.div>
+
+            {/* dropdown-nav */}
+            <motion.div
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                initial={{ opacity: 0, scale: 0, y: 300 }}
+                transition={{ delay: 1.2, type: 'tween', duration: 0.7 }}
+                className='course-navbar-dropdown container'>
+                <div className='dropdown-active' onClick={() => toggleIsOpen(isOpen)}>
+                    <div>
+                        {mainContent}
+                    </div>
+                    <div>
+                        <IoMdArrowDropdown />
+                    </div>
+                </div>
+                {
+                    isOpen === true ? <div className='course-nav-dropdown'>
+                        <div
+                            onClick={() => setMainContent('About')}
+                            className={mainContent === 'About' ?
+                                'active course-nav-link' : 'course-nav-link'}>
+                            About
+                        </div>
+                        <div
+                            onClick={() => setMainContent('Qualification')}
+                            className={mainContent === 'Qualification' ?
+                                'active course-nav-link' : 'course-nav-link'}>
+                            Qualification
+                        </div>
+                        <div
+                            onClick={() => setMainContent('Experience')}
+                            className={mainContent === 'Experience' ?
+                                'active course-nav-link' : 'course-nav-link'}>
+                            Student Experience
+                        </div>
+                        <div
+                            onClick={() => setMainContent('Course Content')}
+                            className={mainContent === 'Course Content' ?
+                                'active course-nav-link' : 'course-nav-link'}>
+                            Course Content
+                        </div>
+                        <div
+                            onClick={() => setMainContent('Platform')}
+                            className={mainContent === 'Platform' ?
+                                'active course-nav-link' : 'course-nav-link'}>
+                            Platform
+                        </div>
+                        <div
+                            onClick={() => setMainContent('Certificate')}
+                            className={mainContent === 'Certificate' ?
+                                'active course-nav-link' : 'course-nav-link'}>
+                            Certificate
+                        </div>
+                    </div> : ''
+                }
+
+            </motion.div>
+            {/* dropdown-nav */}
             {/* /* ************ nav-end ************* */}
 
             <motion.div
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 initial={{ opacity: 0, scale: 0, y: 300 }}
-                transition={{ delay: 0.8, type: 'spring', duration: 1.3 }}
+                transition={{ delay: 1.5, type: 'tween', duration: 0.7 }}
                 className='course-main container'>
 
-                {mainContent === 'about' ?
+                {mainContent === 'About' ?
                     <motion.div
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         initial={{ opacity: 0, scale: 0, y: 300 }}
@@ -109,7 +207,7 @@ const Basic = () => {
                             time is up !!!
                         </p>
                     </motion.div> : ''}
-                {mainContent === 'qualification' ?
+                {mainContent === 'Qualification' ?
                     <motion.div
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         initial={{ opacity: 0, scale: 0, y: 300 }}
@@ -121,7 +219,7 @@ const Basic = () => {
                             <li>No Other Qualification Needed.</li>
                         </ul>
                     </motion.div> : ''}
-                {mainContent === 'experience' ?
+                {mainContent === 'Experience' ?
                     <motion.div
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         initial={{ opacity: 0, scale: 0, y: 300 }}
@@ -137,7 +235,7 @@ const Basic = () => {
                             <li>Duration: Approximately 4 months </li>
                         </ul>
                     </motion.div> : ''}
-                {mainContent === 'content' ?
+                {mainContent === 'Course Content' ?
                     <motion.div
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         initial={{ opacity: 0, scale: 0, y: 300 }}
@@ -146,7 +244,7 @@ const Basic = () => {
                         <h1>Course Content</h1>
                         <BasicContent />
                     </motion.div> : ''}
-                {mainContent === 'platform' ?
+                {mainContent === 'Platform' ?
                     <motion.div
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         initial={{ opacity: 0, scale: 0, y: 300 }}
@@ -159,7 +257,7 @@ const Basic = () => {
                             <li>Discord</li>
                         </ul>
                     </motion.div> : ''}
-                {mainContent === 'certificate' ?
+                {mainContent === 'Certificate' ?
                     <motion.div
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         initial={{ opacity: 0, scale: 0, y: 300 }}
