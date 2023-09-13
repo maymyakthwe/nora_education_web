@@ -34,18 +34,17 @@ const Courses = () => {
                 initial={{ opacity: 0, scale: 0, y: 300 }}
                 transition={{ delay: 0.9, type: 'spring', duration: 1.3 }}
                 className='courses'>
-                <motion.div
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ type: 'tween' }}
-                    className='course'>
-                    <a href="/basic">
+                <div className='course'>
+                    <div href="/basic">
                         <div className='course-logo'>
                             <img src={course1} alt="" />
                         </div>
                         <div className='course-info'>
                             <div className='course-name'>
                                 HTML5 ,CSS3 ,Java Script basic to Advanced
-                                <a className='details' href="/basic">More Details</a>
+                                <a className='details' href="/basic">
+                                    More Details
+                                </a>
                             </div>
                             <div className='course-description'>
                                 <div className='accordion'>
@@ -75,12 +74,12 @@ const Courses = () => {
                                 </div>
                             </div>
                         </div>
-                    </a>
-                </motion.div>
+                    </div>
+                </div>
 
                 {/* ********************************* */}
                 <div className='course'>
-                    <a href="/react">
+                    <div href="/react">
                         <div className='course-logo'>
                             <img src={course2} alt="" />
                         </div>
@@ -116,7 +115,7 @@ const Courses = () => {
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 {/* ************** courses state with an array ******************* */}
                 {/* ************** create coming soon state with an array ******************* */}

@@ -77,15 +77,6 @@
     letter-spacing: 1.5px;
 }
 
-.courses a:visited {
-    color: black;
-}
-
-.course-logo:hover {
-    filter: brightness(85%);
-    transition: all 0.2s;
-}
-
 .course-logo:active {
     filter: brightness(0%);
 }
@@ -113,7 +104,6 @@ label {
     position: relative;
     display: flex;
     align-items: center;
-
 }
 
 label::before {
