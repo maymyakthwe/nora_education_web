@@ -23,7 +23,7 @@ body {
 
 :root {
     --color-bg: #fff;
-    --color-primary: rgb(242, 190, 209);
+    --color-primary: #e8b4cd;
     --color-primary-a: rgba(242, 190, 209, 0.3);
     --color-dark-variant: #ff0000;
     --color-dark: #ff0059;
@@ -192,18 +192,7 @@ img {
     }
 
     /* navbar */
-    .nav {
-        height: 65px;
-    }
 
-    .navbar {
-        font-size: 1.3rem;
-    }
-
-
-    .nav-link {
-        padding: 0.7rem;
-    }
 
     /* course-section */
 
@@ -260,19 +249,7 @@ img {
     }
 
     /* navbar */
-    .nav {
-        height: 55px;
-    }
 
-    .navbar {
-        font-size: 1.2rem;
-    }
-
-
-    .nav-link {
-        padding: 0.5rem;
-        margin: 0 0.5rem;
-    }
 
     /* course-section */
 
@@ -444,19 +421,7 @@ img {
     }
 
     /* navbar */
-    .nav {
-        height: 45px;
-    }
 
-    .navbar {
-        font-size: 0.9rem;
-    }
-
-
-    .nav-link {
-        padding: 0.2rem;
-        margin: 0 0.2rem;
-    }
 
     /* course-section */
     .courses {
@@ -595,19 +560,7 @@ img {
     }
 
     /* navbar */
-    .nav {
-        height: 35px;
-    }
 
-    .navbar {
-        font-size: 0.7rem;
-    }
-
-
-    .nav-link {
-        padding: 0.1rem;
-        margin: 0 0.1rem;
-    }
 
     /* course-section */
 
@@ -651,15 +604,7 @@ img {
 
 
 
-    .navbar {
-        font-size: 0.7rem;
-    }
 
-
-    .nav-link {
-        padding: 0.1rem;
-        margin: 0 0.1rem;
-    }
 
     /* course-section */
 

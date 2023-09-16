@@ -89,7 +89,7 @@
     position: relative;
 }
 
-input {
+input[type=checkbox] {
     position: absolute;
     left: 0;
     right: 0;
@@ -99,14 +99,14 @@ input {
     height: 100%;
 }
 
-label {
+.course label {
     cursor: pointer;
     position: relative;
     display: flex;
     align-items: center;
 }
 
-label::before {
+.course label::before {
     content: "";
     display: inline-block;
     border: 10px solid transparent;
@@ -114,7 +114,7 @@ label::before {
     margin: 0.3rem;
 }
 
-input:checked~p label::before {
+input[type=checkbox]:checked~p label::before {
     border-left: 10px solid transparent;
     border-top: 15px solid #707070;
     margin-right: 10px;
@@ -129,7 +129,7 @@ input:checked~p label::before {
 
 }
 
-input:checked~p {
+input[type=checkbox]:checked~p {
     border: none;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
@@ -147,7 +147,7 @@ input:checked~p {
     border-bottom: 1px solid rgba(112, 112, 112, 0.1);
 }
 
-input:checked~.content {
+input[type=checkbox]:checked~.content {
     max-height: max-content;
 }
 
