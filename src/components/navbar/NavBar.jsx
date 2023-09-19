@@ -21,7 +21,7 @@ const NavBar = () => {
             searchResult.removeChild(searchResult.firstChild)
         }
         if (searchValue.length > 2) {
-            let filteredResult = allCourses.filter((courses) => courses.catagory.includes(searchValue));
+            let filteredResult = allCourses.filter((courses) => courses.catagory.includes(searchValue.toLowerCase()));
             if (filteredResult.length > 0) {
                 filteredResult.map((eachResult) => {
                     let eachResultDiv = document.createElement('div');

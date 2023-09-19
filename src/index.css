@@ -491,6 +491,11 @@ img {
         padding: 0 1rem;
     }
 
+    .result-div {
+        width: 300px;
+
+    }
+
 }
 
 @media only screen and (max-width:600px) {
@@ -592,6 +597,12 @@ img {
         padding: 0.4rem 0.6rem 0 0.6rem;
     }
 
+    .result-div {
+        width: 245px;
+        font-size: 0.8rem;
+        transform: translateX(45px);
+    }
+
 }
 
 
@@ -673,8 +684,11 @@ img {
         width: 220px;
     }
 
-    .search-bar input {
-        width: 180px;
+    .result-div {
+        width: 200px;
+        font-size: 0.7rem;
+        grid-template-columns: 33% 64%;
+        transform: translateX(28px);
     }
 
 }
@@ -769,6 +783,11 @@ img {
     .search-bar input {
         height: 25px;
         width: 150px;
+    }
+
+    .result-div {
+        width: 200px;
+        transform: none;
     }
 }
 
