@@ -685,7 +685,7 @@ img {
     }
 
     .result-div {
-        width: 200px;
+        width: 190px;
         font-size: 0.7rem;
         grid-template-columns: 33% 64%;
         transform: translateX(28px);
@@ -782,7 +782,7 @@ img {
 
     .search-bar input {
         height: 25px;
-        width: 150px;
+        width: 140px;
     }
 
     .result-div {
