@@ -685,7 +685,7 @@ img {
     }
 
     .result-div {
-        width: 190px;
+        width: 200px;
         font-size: 0.7rem;
         grid-template-columns: 33% 64%;
         transform: translateX(28px);
@@ -817,5 +817,17 @@ img {
 
     .contact-div {
         font-size: 0.8rem;
+    }
+
+    .search-bar {
+        width: 140px;
+    }
+
+    .search-bar input {
+        width: 110px;
+    }
+
+    .nav-title {
+        padding: 0;
     }
 }
