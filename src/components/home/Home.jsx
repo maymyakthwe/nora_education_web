@@ -25,8 +25,18 @@ const Home = () => {
                     </div>
                 </div>
             </motion.div>
-            <Courses />
-            <Contact />
+            <motion.div
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                initial={{ opacity: 0, scale: 0, y: 300 }}
+                transition={{ delay: 0.5, type: 'tween', duration: 0.7 }}>
+                <Courses />
+            </motion.div>
+            <motion.div
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                initial={{ opacity: 0, scale: 0, y: 300 }}
+                transition={{ delay: 0.9, type: 'tween', duration: 0.7 }}>
+                <Contact />
+            </motion.div>
         </section >
     )
 }

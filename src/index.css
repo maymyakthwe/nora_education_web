@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;500;600;700&family=Kanit:wght@400;500;600;700&display=swap');
 
 * {
     font-family: 'Inter', sans-serif;
@@ -24,9 +25,9 @@ body {
 :root {
     --color-bg: #fff;
     --color-primary: #e8b4cd;
-    --color-primary-a: rgba(242, 190, 209, 0.3);
+    --color-primary-a: #f4d9e6;
     --color-dark-variant: #ff0000;
-    --color-dark: #ff0059;
+    --color-dark: #bd536c;
 
     --transition: all 400ms ease-in-out;
 
@@ -70,27 +71,7 @@ img {
         left: 38%;
     }
 
-    /* course-section */
 
-    .courses {
-        width: 60%;
-    }
-
-    .courses-headline>div>div {
-        font-size: 1.2rem;
-    }
-
-    .courses-headline a {
-        font-size: 1rem;
-    }
-
-    .courses-headline>h1 {
-        font-size: 2.5rem;
-    }
-
-    .course-name {
-        font-size: 1.3rem;
-    }
 
 }
 
@@ -109,9 +90,6 @@ img {
 
     /* course-section */
 
-    .courses {
-        width: 65%;
-    }
 
     /* basic-course */
     .basic-course-header-info {
@@ -149,10 +127,6 @@ img {
 
     /* course-section */
 
-    .course-name {
-        font-size: 1.2rem;
-    }
-
     /* contact-section */
     .questions {
         font-size: 2.5rem;
@@ -163,10 +137,6 @@ img {
 
 @media only screen and (max-width:1200px) {
     /* course-section */
-
-    .courses {
-        width: 75%;
-    }
 
     /* basic-course */
 
@@ -221,22 +191,6 @@ img {
 
     /* course-section */
 
-    .courses {
-        width: 80%;
-    }
-
-    .courses-headline a {
-        font-size: 0.8rem;
-    }
-
-    .courses-headline>div>div {
-        font-size: 1rem;
-    }
-
-    .courses-headline>h1 {
-        font-size: 2rem;
-    }
-
     /* basic-course */
 
     .basic-course-title {
@@ -284,19 +238,6 @@ img {
 
     /* course-section */
 
-    .courses {
-        width: 90%;
-    }
-
-    .course-name {
-        font-size: 1rem;
-    }
-
-    .course-description,
-    .course-level,
-    .course-price {
-        font-size: 0.9rem;
-    }
 
     /* contact-section */
     .questions {
@@ -369,10 +310,6 @@ img {
 
     /* course-section */
 
-    .course {
-        width: 80%;
-    }
-
     /* contact-section */
 
     .contact-div {
@@ -438,9 +375,6 @@ img {
     }
 
     /* course-section */
-    .courses-section {
-        margin-top: 5rem;
-    }
 
     /* basic-course */
     .basic-course-header-img {
@@ -619,16 +553,6 @@ img {
 
     /* course-section */
 
-    .courses {
-        grid-template-columns: 100%;
-        width: 80%;
-        margin: 3rem auto;
-    }
-
-    .course {
-        width: 80%;
-        margin-bottom: 2rem;
-    }
 
     /* contact-section */
 
@@ -712,25 +636,6 @@ img {
 
     /* course-section */
 
-    .course-name {
-        font-size: 1rem;
-    }
-
-    .course-description,
-    .course-level,
-    .course-price {
-        font-size: 0.8rem;
-    }
-
-    .accordion>p {
-        padding: 0.2rem 0.5rem;
-    }
-
-    .content>p {
-        font-size: 0.7rem;
-        padding: 0.6rem 1.5rem;
-
-    }
 
     /* contact-section */
     .contact-div {
@@ -798,17 +703,7 @@ img {
     }
 
     /* course-section */
-    .course {
-        width: 90%;
-    }
 
-    .courses-headline a {
-        font-size: 0.6rem;
-    }
-
-    .questions {
-        font-size: 1.3rem;
-    }
 
     /* contact-section */
     .contact-div {

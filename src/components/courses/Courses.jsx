@@ -1,12 +1,44 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './courses.css'
-import course1 from '../../images/1.png'
-import course2 from '../../images/2.png'
 import { BsFillArrowDownSquareFill } from 'react-icons/bs'
 import { motion } from 'framer-motion'
+import allCourses from '../data'
 
 
 const Courses = () => {
+
+    useEffect(() => {
+        let previewCourse = document.querySelector('.preview-courses')
+        while (previewCourse.firstChild) {
+            previewCourse.removeChild(previewCourse.firstChild)
+        }
+        let result = allCourses.map((course) => {
+            let div = document.createElement('div');
+            div.setAttribute('classname', 'preview-course')
+            let img = document.createElement('img');
+            img.setAttribute('src', course.img);
+            div.append(img);
+
+            let div2 = document.createElement('div');
+            div2.setAttribute('classname', 'preview-course-infos')
+            div2.innerHTML = `
+            <div className='preview-course-heading'>${course.name}</div>
+            <div className='preview-course-details'>
+                <div>${course.description}</div>
+                <div>${course.level}</div>
+                <div>${course.price} mmk<span>${course.onpromotion === true ? 'on promotion' : ''}</span></div>
+            </div>`
+
+            div.append(div2)
+
+            console.log(div)
+            return div
+        })
+        for (let r of result) {
+            previewCourse.append(r)
+        }
+    })
+
     return (
         <section id='courses-section' className='courses-section '>
             <div className='courses-headline'>
@@ -33,92 +65,7 @@ const Courses = () => {
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 initial={{ opacity: 0, scale: 0, y: 300 }}
                 transition={{ delay: 0.9, type: 'spring', duration: 1.3 }}
-                className='courses'>
-                <div className='course'>
-                    <div href="/basic">
-                        <div className='course-logo'>
-                            <img src={course1} alt="" />
-                        </div>
-                        <div className='course-info'>
-                            <div className='course-name'>
-                                HTML5 ,CSS3 ,Java Script basic to Advanced
-                                <a className='details' href="/basic">
-                                    More Details
-                                </a>
-                            </div>
-                            <div className='course-description'>
-                                <div className='accordion'>
-                                    <input type="checkbox" id='input-1' />
-                                    <p><label htmlFor="input-1"> What you'll learn </label></p>
-                                    <div className='content'>
-                                        <p>HTML, CSS, Java Script , Dom Manipulation With Java Script</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='course-level'>
-                                <div className='accordion'>
-                                    <input type="checkbox" id='input-2' />
-                                    <p><label htmlFor="input-2"> Course Level</label></p>
-                                    <div className='content'>
-                                        <p>Beginner Course</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='course-price'>
-                                <div className='accordion'>
-                                    <input type="checkbox" id='input-3' />
-                                    <p><label htmlFor="input-3"> Pricing </label></p>
-                                    <div className='content'>
-                                        <p className='course-price'><span><b>40,000 mmk </b></span><small> <b>On Promotion</b> </small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* ********************************* */}
-                <div className='course'>
-                    <div href="/react">
-                        <div className='course-logo'>
-                            <img src={course2} alt="" />
-                        </div>
-                        <div className='course-info'>
-                            <div className='course-name'>
-                                React Js : Complete React Developer Course
-                                <a className='details' href="/basic">More Details</a></div>
-                            <div className='course-description'>
-                                <div className='accordion'>
-                                    <input type="checkbox" id='input-11' />
-                                    <p><label htmlFor="input-11"> What you'll learn </label></p>
-                                    <div className='content'>
-                                        <p>React, React-Router, Framer-motion</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='course-level'>
-                                <div className='accordion'>
-                                    <input type="checkbox" id='input-12' />
-                                    <p><label htmlFor="input-12"> Course Level </label></p>
-                                    <div className='content'>
-                                        <p>Html,Css and Js knowledge Required</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='course-price'>
-                                <div className='accordion'>
-                                    <input type="checkbox" id='input-13' />
-                                    <p><label htmlFor="input-13"> Pricing </label></p>
-                                    <div className='content'>
-                                        <p className='course-price'><span><b>40,000 mmk </b></span><small> <b>On Promotion</b> </small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* ************** courses state with an array ******************* */}
-                {/* ************** create coming soon state with an array ******************* */}
+                className='preview-courses'>
             </motion.div>
         </section >
     )

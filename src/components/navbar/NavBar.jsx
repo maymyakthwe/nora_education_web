@@ -70,8 +70,8 @@ const NavBar = () => {
                 <div className='nav-links'>
                     <div className='nav-link'><a href="/#home-section">Home</a></div>
                     <div className='nav-link'><a href="/#courses-section">Courses</a></div>
-                    <div className='nav-link'><a href="/#contact-section">Contact</a></div>
-                    <div className='nav-link'><a href="/">About Us</a></div>
+                    <div className='nav-link'><a href="/#contact-section">Contact Us</a></div>
+                    <div className='nav-link'><a href="/about">About Us</a></div>
                 </div>
             </div>
         </div>

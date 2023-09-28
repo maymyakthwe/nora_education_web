@@ -7,6 +7,8 @@ import vidOne from '../../videos/demon-slayer.mp4'
 import vidTwo from '../../videos/tic-tac-toe.mp4'
 import { IoMdArrowDropdown } from 'react-icons/io'
 import { IoMdArrowDropup } from 'react-icons/io'
+import Contact from '../contact/Contact'
+
 
 
 const Basic = () => {
@@ -19,7 +21,7 @@ const Basic = () => {
     }
 
     return (
-        <section id='Basic-course-section' className='basic-course'>
+        <section id='basic-course-section' className='basic-course'>
             <motion.div
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 initial={{ opacity: 0, scale: 0, y: 300 }}
