@@ -3,6 +3,7 @@ import './courses.css'
 import { BsFillArrowDownSquareFill } from 'react-icons/bs'
 import { motion } from 'framer-motion'
 import allCourses from '../data'
+import { SlArrowDown } from 'react-icons/sl'
 
 
 const Courses = () => {
@@ -13,30 +14,43 @@ const Courses = () => {
             previewCourse.removeChild(previewCourse.firstChild)
         }
         let result = allCourses.map((course) => {
-            let div = document.createElement('div');
-            div.setAttribute('classname', 'preview-course')
+            //the whole link
+            let a = document.createElement('a');
+            a.setAttribute('class', course.isAvailable ? 'preview-course' : 'preview-course coming-soon')
+            a.setAttribute('href', course.link)
+
+            //add an img
             let img = document.createElement('img');
             img.setAttribute('src', course.img);
-            div.append(img);
+            a.append(img);
 
-            let div2 = document.createElement('div');
-            div2.setAttribute('classname', 'preview-course-infos')
-            div2.innerHTML = `
-            <div className='preview-course-heading'>${course.name}</div>
-            <div className='preview-course-details'>
+            //promotion div
+            if (course.onpromotion) {
+                let onPromotion = document.createElement('div');
+                onPromotion.setAttribute('class', 'on-promotion')
+                onPromotion.innerHTML = 'On Promotion'
+                a.append(onPromotion);
+            }
+
+            //add info div
+            let div = document.createElement('div');
+            div.setAttribute('class', 'preview-course-infos')
+            div.innerHTML = `
+            <div class='preview-course-heading'>${course.name}</div>
+            <div class='preview-course-details'>
                 <div>${course.description}</div>
                 <div>${course.level}</div>
-                <div>${course.price} mmk<span>${course.onpromotion === true ? 'on promotion' : ''}</span></div>
+                <div>${course.price} mmk<span>${course.onpromotion === true ? ' on promotion' : ''}</span></div>
             </div>`
 
-            div.append(div2)
-
-            console.log(div)
-            return div
+            a.append(div)
+            return a
         })
         for (let r of result) {
             previewCourse.append(r)
         }
+
+
     })
 
     return (
@@ -65,8 +79,11 @@ const Courses = () => {
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 initial={{ opacity: 0, scale: 0, y: 300 }}
                 transition={{ delay: 0.9, type: 'spring', duration: 1.3 }}
-                className='preview-courses'>
+                className='preview-courses container'>
             </motion.div>
+            {/* ********************************* */}
+
+
         </section >
     )
 }

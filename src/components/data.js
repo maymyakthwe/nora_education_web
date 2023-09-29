@@ -25,6 +25,7 @@ let allCourses = [
         isAvailable: false,
         onpromotion: true
     }
+
 ]
 
 export default allCourses;

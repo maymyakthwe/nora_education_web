@@ -1,5 +1,5 @@
 .courses-section {
-    padding-top: 8rem;
+    padding: 5rem 0;
     background-color: var(--color-primary-a);
 }
 
@@ -36,6 +36,65 @@
 
 /* ******************* */
 
+.preview-courses {
+    display: flex;
+    padding: 30px;
+    justify-content: space-evenly;
+}
+
+
+.preview-course {
+    padding: 20px;
+    background-color: #f7f7f8;
+    width: 30%;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+}
+
+.preview-course-infos {
+    color: black;
+}
+
+.preview-course-infos:visited {
+    color: black;
+}
+
+div.preview-course-heading {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.preview-course-details div:nth-child(2),
+.preview-course-details div:nth-child(3) {
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.preview-course-details div:nth-child(3) span {
+    color: red;
+    font-weight: 700;
+    font-size: small;
+}
+
+.on-promotion {
+    padding: 5px;
+    width: 200px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    transform: rotateZ(45deg);
+    position: absolute;
+    right: -50px;
+    top: 30px;
+}
+
+.coming-soon {
+    filter: grayscale(120%);
+    pointer-events: none;
+}
 
 
 
