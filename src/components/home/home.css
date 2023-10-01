@@ -1,6 +1,6 @@
 .home-background {
     height: 550px;
-    background-color: var(--color-primary);
+    background-color: black;
     position: relative;
     text-align: center;
     z-index: -1;

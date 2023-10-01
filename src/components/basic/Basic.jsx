@@ -7,7 +7,6 @@ import vidOne from '../../videos/demon-slayer.mp4'
 import vidTwo from '../../videos/tic-tac-toe.mp4'
 import { IoMdArrowDropdown } from 'react-icons/io'
 import { IoMdArrowDropup } from 'react-icons/io'
-import Contact from '../contact/Contact'
 
 
 

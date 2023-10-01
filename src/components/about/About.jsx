@@ -1,6 +1,5 @@
 import React from 'react'
 import './about.css'
-import logo1 from '../../images/nora-logo-1.png'
 import cover from '../../images/cover.png'
 import Contact from '../contact/Contact'
 

@@ -3,7 +3,6 @@ import './courses.css'
 import { BsFillArrowDownSquareFill } from 'react-icons/bs'
 import { motion } from 'framer-motion'
 import allCourses from '../data'
-import { SlArrowDown } from 'react-icons/sl'
 
 
 const Courses = () => {
