@@ -53,7 +53,7 @@
 .fields {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 2rem 0;
+    padding: 2rem 0 4rem 0;
 }
 
 .fields div {
