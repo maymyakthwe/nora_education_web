@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import course1 from '../../images/1.png'
+import course1 from '../../images/1.jpg'
 import './basic.css'
 import BasicContent from '../basicContent/BasicContent'
 import { motion } from 'framer-motion'
@@ -7,6 +7,7 @@ import vidOne from '../../videos/demon-slayer.mp4'
 import vidTwo from '../../videos/tic-tac-toe.mp4'
 import { IoMdArrowDropdown } from 'react-icons/io'
 import { IoMdArrowDropup } from 'react-icons/io'
+import Contact from '../contact/Contact'
 
 
 
@@ -279,6 +280,12 @@ const Basic = () => {
                         </ul>
 
                     </motion.div> : ''}
+            </motion.div>
+            <motion.div
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                initial={{ opacity: 0, scale: 0, y: 300 }}
+                transition={{ delay: 0.9, type: 'tween', duration: 0.7 }}>
+                <Contact />
             </motion.div>
         </section >
     )

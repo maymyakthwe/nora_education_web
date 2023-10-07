@@ -1,6 +1,6 @@
 .courses-section {
     padding: 5rem 0;
-    background-color: var(--color-primary-a);
+    background-color: #f4f3f3;
 }
 
 .courses-headline>h1 {
@@ -45,15 +45,20 @@
 
 .preview-course {
     padding: 20px;
-    background-color: #f7f7f8;
+    background-color: white;
     width: 35%;
-    height: fit-content;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .preview-course-infos {
     color: black;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 .preview-course-infos:visited {
@@ -66,13 +71,13 @@ div.preview-course-heading {
     padding: 10px 0;
 }
 
-.preview-course-details div:nth-child(2),
-.preview-course-details div:nth-child(3) {
+.preview-course-details div:nth-child(3),
+.preview-course-details div:nth-child(4) {
     padding-top: 10px;
     font-weight: 600;
 }
 
-.preview-course-details div:nth-child(3) span {
+.preview-course-details div:nth-child(4) span {
     color: red;
     font-weight: 700;
     font-size: small;
@@ -96,6 +101,36 @@ div.preview-course-heading {
     pointer-events: none;
 }
 
+.go-to-courses {
+    margin-bottom: 10px;
+}
+
+.go-to-courses a {
+    padding: 10px 20px;
+    background-color: #ececec;
+    color: black;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: small;
+}
+
+.more-courses {
+
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.more-courses a {
+    padding: 15px 50px;
+    background-color: white;
+    border-radius: 5px;
+    color: var(--color-dark);
+}
+
+.more-courses a:visited {
+    color: var(--color-dark);
+
+}
 
 
 /* ***accordion*** */

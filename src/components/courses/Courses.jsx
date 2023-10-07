@@ -35,22 +35,25 @@ const Courses = () => {
             let div = document.createElement('div');
             div.setAttribute('class', 'preview-course-infos')
             div.innerHTML = `
-            <div class='preview-course-heading'>${course.name}</div>
             <div class='preview-course-details'>
+            <div class='preview-course-heading'>${course.name}</div>
                 <div>${course.description}</div>
                 <div>${course.level}</div>
                 <div>${course.price} mmk<span>${course.onpromotion === true ? ' on promotion' : ''}</span></div>
+            </div>
+            <div class='go-to-courses' >
+                <a href=${course.link}>
+                    More Details
+                </a>
             </div>`
 
             a.append(div)
             return a
         })
-        for (let r of result) {
-            previewCourse.append(r)
+        for (let i = 0; i < 2; i++) {
+            previewCourse.append(result[i]);
         }
-
-
-    })
+    }, [])
 
     return (
         <section id='courses-section' className='courses-section '>
@@ -80,9 +83,12 @@ const Courses = () => {
                 transition={{ delay: 0.9, type: 'spring', duration: 1.3 }}
                 className='preview-courses container'>
             </motion.div>
+            <div class='more-courses container' >
+                <a href='/courses'>
+                    More Courses
+                </a>
+            </div>
             {/* ********************************* */}
-
-
         </section >
     )
 }
