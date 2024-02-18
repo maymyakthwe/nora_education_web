@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import course1 from '../../images/1.jpg'
+import course1 from '../../images/1.png'
 import './basic.css'
 import BasicContent from '../basicContent/BasicContent'
 import { motion } from 'framer-motion'
@@ -202,17 +202,18 @@ const Basic = () => {
                         className='basic-main-info'>
                         <h1>About This Course</h1>
                         <p>
-                            In this course, every things you need to know about HTML, CSS and JavaScript is
-                            included which are the perfect start to build your career as a website developer
-                            or a mobile app developer. In fact, Html and Css are the very basic of developing
-                            websites,web applications and mobile applications. JavaScript is used in many fields even
-                            in game development and web servers, including the formor three. You wouldn't wanna miss
-                            the opportunity to study the perfect foundation course of the highest demand jobs with
-                            attractive salary. In this course, these three basic languages essential to start your carrer as a developer
-                            are explained through the most super simple lectures together with examples and
-                            exercises for your practice. Inspite of all that, the most attractive part is, this course is self-paced learning which is
-                            based your ability to learn with a 24 hr standby instructor. Including all these privilege, we are still offering a 10% discount. Get your access before
-                            time is up !!!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Soluta, pariatur. Soluta, quia in? Itaque dolores tenetur
+                             perspiciatis vel, non exercitationem aperiam quod repellendus 
+                             voluptatem consequuntur id ipsum ut eaque beatae.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                             Soluta, pariatur. Soluta, quia in? Itaque dolores tenetur 
+                             perspiciatis vel, non exercitationem aperiam quod repellendus
+                              voluptatem consequuntur id ipsum ut eaque beatae.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                             Soluta, pariatur. Soluta, quia in? Itaque dolores tenetur 
+                             perspiciatis vel, non exercitationem aperiam quod repellendus 
+                             voluptatem consequuntur id ipsum ut eaque beatae.
                         </p>
                     </motion.div> : ''}
                 {mainContent === 'Qualification' ?

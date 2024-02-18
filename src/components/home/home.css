@@ -1,27 +1,19 @@
 .home-background {
-    height: 550px;
-    background-color: black;
-    position: relative;
-    text-align: center;
-    z-index: -1;
-}
-
-.nora-logo {
-    width: 25%;
-    position: absolute;
-    left: 28%;
-    top: 100%;
-    transform: translate(-50%, -99.5%);
-    z-index: 1;
+    height: max-content;
+    background-image: url("../../images/home_image.png");
+    background-position: center;
+    background-size: 100%;
 }
 
 .introduction-texts {
-    position: relative;
-    left: 40%;
-    top: 50%;
-    transform: translate(0, -50%);
+    text-align: center;
     font-size: 3rem;
-    color: var(--color-dark);
-    z-index: 0;
-    width: 60%;
+    font-weight: 700;
+    padding: 250px 0;
+}
+
+.introduction-texts>div {
+    width: 50%;
+    position: relative;
+    left: 50%;
 }

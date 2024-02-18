@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react'
 import './navbar.css'
-import noraLogoOne from '../../images/nora-logo-2.png'
+import noraLogoOne from '../../images/logo2.png'
 import { BsSearch } from 'react-icons/bs'
 import allCourses from '../data'
 

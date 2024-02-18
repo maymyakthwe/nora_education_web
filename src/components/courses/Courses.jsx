@@ -83,7 +83,7 @@ const Courses = () => {
                 transition={{ delay: 0.9, type: 'spring', duration: 1.3 }}
                 className='preview-courses container'>
             </motion.div>
-            <div class='more-courses container' >
+            <div class='more-courses-coursesJSX container' >
                 <a href='/courses'>
                     More Courses
                 </a>

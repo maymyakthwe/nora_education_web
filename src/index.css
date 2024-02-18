@@ -62,29 +62,7 @@ img {
     }
 }
 
-@media only screen and (max-width:1500px) {
-    .nora-logo {
-        width: 30%;
-    }
-
-    .introduction-texts {
-        left: 38%;
-    }
-
-}
-
 @media only screen and (max-width:1400px) {
-    .home-background {
-        height: 500px;
-    }
-
-    .nora-logo {
-        left: 26%;
-    }
-
-    .introduction-texts {
-        left: 35%;
-    }
 
     /* course-section */
 
@@ -111,17 +89,6 @@ img {
 }
 
 @media only screen and (max-width:1300px) {
-
-
-
-    .introduction-texts {
-        font-size: 2.5rem;
-        width: 65%;
-    }
-
-    .home-background {
-        height: 450px;
-    }
 
     /* course-section */
 
@@ -182,13 +149,7 @@ img {
 
 @media only screen and (max-width:1100px) {
 
-    .nora-logo {
-        width: 32%;
-    }
 
-    .home-background {
-        height: 400px;
-    }
 
     /* navbar */
 
@@ -226,15 +187,7 @@ img {
 }
 
 @media only screen and (max-width:1000px) {
-    .introduction-texts {
-        font-size: 2rem;
-        width: 65%;
-        left: 35%;
-    }
 
-    .nora-logo {
-        left: 23%;
-    }
 
     .container {
         width: 80%;
@@ -254,13 +207,6 @@ img {
 
 @media only screen and (max-width:900px) {
 
-    .home-background {
-        height: 370px;
-    }
-
-    .nora-logo {
-        width: 35%;
-    }
 
     /* navbar */
 
@@ -347,17 +293,8 @@ img {
 
 @media only screen and (max-width:800px) {
 
-    .home-background {
-        height: 350px;
-    }
 
-    .introduction-texts {
-        font-size: 1.8rem;
-    }
 
-    .nora-logo {
-        width: 37%;
-    }
 
     /* contact-section */
 
@@ -423,20 +360,8 @@ img {
 
 @media only screen and (max-width:700px) {
 
-    .home-background {
-        height: 300px;
-    }
-
-    .introduction-texts {
-        font-size: 1.7rem;
-    }
-
     .courses {
         width: 95%;
-    }
-
-    .nora-logo {
-        left: 20%;
     }
 
     /* course-section */
@@ -523,13 +448,6 @@ img {
 
 @media only screen and (max-width:600px) {
 
-    .home-background {
-        height: 250px;
-    }
-
-    .introduction-texts {
-        font-size: 1.3rem;
-    }
 
     /* navbar */
 
@@ -655,14 +573,6 @@ img {
 
 @media only screen and (max-width:500px) {
 
-    .home-background {
-        height: 220px;
-    }
-
-    .nora-logo {
-        width: 35%;
-    }
-
     /* preview-course-section */
 
     .preview-course {
@@ -756,18 +666,6 @@ img {
 
 @media only screen and (max-width:420px) {
 
-    .home-background {
-        height: 170px;
-    }
-
-    .nora-logo {
-        width: 32%;
-    }
-
-    .introduction-texts {
-        font-size: 1rem;
-    }
-
     /* navbar */
 
 
@@ -835,10 +733,6 @@ img {
     }
 
 
-    .home-background {
-        height: 150px;
-    }
-
     /* course-section */
 
 
@@ -901,9 +795,6 @@ img {
 
 @media only screen and (max-width:300px) {
 
-    .home-background {
-        height: 150px;
-    }
 
     /* course-section */
 

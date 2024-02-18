@@ -1,11 +1,11 @@
 .about-texts {
-    background-color: var(--color-primary-a);
+    background-color: var(--color-bg);
     padding: 7rem 0 4rem 0;
 }
 
 .about-img {
     width: 100%;
-    background-color: var(--color-primary-a);
+    background-color: var(--color-bg);
 }
 
 .about-text-heading {
@@ -30,7 +30,7 @@
 
 .about-links a {
     background-color: var(--color-dark);
-    color: var(--color-primary-a);
+    color: var(--color-bg);
     font-family: 'Aleo', serif;
     padding: 1rem 2rem;
     margin: 1rem;
@@ -40,7 +40,7 @@
 }
 
 .profession-fields {
-    background-color: var(--color-primary-a);
+    background-color: var(--color-bg);
     text-align: center;
     color: var(--color-dark);
 }
@@ -59,12 +59,13 @@
 .fields div {
     padding: 1rem;
     margin: 1rem;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-a);
     border-radius: 10px;
+    font-weight: 700;
 }
 
 .fields small {
     display: block;
     font-weight: 700;
-    color: var(--color-primary-a);
+    color: var(--color-bg);
 }

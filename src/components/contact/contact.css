@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     font-size: 1.5rem;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-a);
     line-height: 2.3;
 
 }
@@ -18,25 +18,25 @@
 .questions {
     font-weight: 500;
     font-size: 3rem;
-    color: var(--color-dark)
+    color: black
 }
 
 .contact-me {
     font-weight: 300;
-    color: var(--color-dark);
+    color: black;
 }
 
 .contact-me-links {
-    color: var(--color-dark);
+    color: black;
     margin: 1rem;
 
 }
 
 .contact-me-links>a {
     margin: 1rem;
-    color: var(--color-dark);
+    color: black;
 }
 
 .contact-me-links>a:visited {
-    color: var(--color-dark);
+    color: black;
 }

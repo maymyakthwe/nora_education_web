@@ -17,10 +17,13 @@ class CarouselText extends Component {
             <div>
                 <Slider {...settings}>
                     <div>
-                        <h4>Welcome To Nora's Academy</h4>
+                        <h4>Welcome To My Academy!</h4>
                     </div>
                     <div>
-                        <h4 href="#courses-section">Explore Our Courses</h4>
+                        <h4>Your Best Place To Learn From Home!</h4>
+                    </div>
+                    <div>
+                        <h4 href="#courses-section">Explore Our Courses!</h4>
                     </div>
                     <div>
                         <h4>Get Your Discount Before Sale Ends!!!</h4>

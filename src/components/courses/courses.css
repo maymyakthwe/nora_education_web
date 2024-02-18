@@ -7,7 +7,7 @@
     font-size: 3rem;
     font-weight: 600;
     padding: 2rem 0;
-    color: var(--color-dark);
+    color: black;
     text-align: center;
 }
 
@@ -20,17 +20,17 @@
 .courses-headline a {
     font-size: 1.2rem;
     margin: 0 1rem;
-    color: var(--color-primary);
+    color: var(--color-dark);
 }
 
 .courses-headline a:visited {
-    color: var(--color-primary);
+    color: var(--color-dark);
 }
 
 .courses-headline>div>div {
     align-self: center;
     font-size: 1.5rem;
-    color: var(--color-primary);
+    color: var(--color-dark);
 }
 
 
@@ -114,21 +114,21 @@ div.preview-course-heading {
     font-size: small;
 }
 
-.more-courses {
+.more-courses-coursesJSX {
 
     margin-top: 2rem;
     text-align: center;
 }
 
-.more-courses a {
+.more-courses-coursesJSX a {
     padding: 15px 50px;
     background-color: white;
     border-radius: 5px;
-    color: var(--color-dark);
+    color: black;
 }
 
-.more-courses a:visited {
-    color: var(--color-dark);
+.more-courses-coursesJSX a:visited {
+    color: black;
 
 }
 
