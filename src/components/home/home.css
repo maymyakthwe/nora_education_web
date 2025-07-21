@@ -3,7 +3,13 @@
     background-image: url("../../images/home_image.png");
     background-position: center;
     background-size: 100%;
-    backgroundSize:'cover';
+}
+
+@media (max-width: 800px) {
+  .home-background {
+    background-size: cover;
+    padding:150px 0;
+  }
 }
 
 .introduction-texts {
